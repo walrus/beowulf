@@ -32,6 +32,14 @@
 % in-line code styling (same style as listing)
 \newcommand{\shell}[1]{\lstinline{#1}}
 
+% Line and paragraph spacing
+\newenvironment{linewise}
+  {\parindent=0pt
+   \obeyspaces\obeylines
+   \begingroup\lccode`~=`\^^M
+   \lowercase{\endgroup\def~}{\par\leavevmode}}
+  {\ignorespacesafterend}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -50,7 +58,7 @@ Daniel Clay \\
 
 In order of appearance:
 \begin{description}
-    \item[The Bard] Narrator of the play 
+    \item[The Bard] Narrator
     \item[Hrothgar] King of the Spear-Danes (Scyldings)
     \item[Grendel] An evil monster, descendant of Cain
     \item[Beowulf] A hero of the Geatish people
@@ -71,7 +79,7 @@ In order of appearance:
 
 Of the cast, most of Beowulf's companions can be omitted as required, and those
 present at the court of Hrothgar can be doubled up with those present at the court
-of Hygelac. 
+of Hygelac. Hrethic \& Hrothmund may also be omitted.
 
 Most of the minor roles can be played by men or women, as can Grendel, Grendel's
 Mother, the Dragon and the Bard
@@ -87,7 +95,7 @@ Lighting by open flame is preferred to lighting by electric light.
 \subsection{Structure of the play}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Despite the length of the original poem, which runs to over 3000 lines, the play
-should be able to be performed straight through, without and interval.
+should be able to be performed straight through, without an interval.
 
 The poem itself is characterised by the three combats Beowulf partakes in; that
 with Grendel, with Grendel's Mother, and with the Dragon. 
@@ -96,6 +104,162 @@ with Grendel, with Grendel's Mother, and with the Dragon.
 \section{Script}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Listen! Beowulf kills Grendel, then Grendel's Mother, then a dragon. 
+{\linewise
 
+\centerline{\textbf{Scene 1}}
+\centerline{\textit{A mead hall, somewhere in Anglo Saxon England}}
+
+\textbf{The Bard} Listen!
+We have heard of the thriving of the throne of Denmark,
+how the folk-kings flourished in former days,
+how those royal athelings earned that glory.
+
+Was it not Scyld Shefing that shook the halls,
+took mead-benches, taught encroaching
+foes to fear him – who, found in childhood,
+lacked clothing? Yet he lived and prospered,
+grew in strength and stature under the heavens
+until the clans settled in the sea-coasts neighbouring
+over the whale-road all must obey him
+and give tribute. He was a good king!
+
+A boy child was afterwards born to Scyld,
+a young child in hall-yard, a hope for the people,
+sent them by God
+Through the northern lands the name of Beow,
+the son of Scyld, sprang widely.
+
+At the hour shaped for him Scyld departed,
+the hero crossed into the keeping of his Lord.
+Then for a long space there lodged in the stronghold
+Beowulf the Dane, dear king of his people,
+when late was born to him
+the lord Healfdene, lifelong the ruler
+and war-feared patriarch of the proud Scyldings.
+
+He next fathered four children
+that leapt into the world, this leader of armies,
+Heorogar and Hrothgar and Halga the Good and Ursula.
+
+Then to Hrothgar was granted glory in battle,
+mastery of the field; so friends and kinsmen
+gladly obeyed him, and his band increased
+to a great company. It came into his mind
+that he would command the construction
+of a huge mead-hall, a house greater
+than men on earth ever had heard of,
+and share the gifts God had bestowed on him
+upon its floor with folk young and old –
+apart from public land and the persons of slaves.
+
+Far and wide (as I heard) the work was given out
+in many a tribe over middle earth,
+the making of the mead-hall. And, as men reckon,
+the day of readiness dawned very soon
+for this greatest of houses. Heorot he named it
+whose word ruled a wide empire.
+He made good his boast, gave out rings,
+arm-bands at the banquet. Boldly the hall reared
+its arched gables; unkindled the torch-flame
+that turned it to ashes. The time was not yet
+when the blood-feud should bring out again
+sword-hatred in sworn kindred.
+
+It was with pain that the powerful spirit
+dwelling in darkness endured that time,
+hearing daily the hall filled with loud amusement.
+\textit{Grendel} they called this cruel spirit,
+the fell and fen his fastness was, the march his haunt.
+
+With the coming of night came Grendel also,
+sought the great house and how the Ring-Danes
+held their hall when the horn had gone round.
+He found in Heorot the force of nobles
+slept after supper, sorrow forgotten,
+the condition of men. Maddening with rage,
+he struck quickly, creature of evil:
+grim and greedy, he grasped on their pallets
+thirty warriors, and away he was out of there,
+thrilled with his catch: he carried off homeward
+his glut of slaughter, sought his own halls.
+
+As the day broke, with the dawn’s light
+Grendel’s outrage was openly to be seen:
+night’s table-laughter turned to morning’s
+lamentation. Lord Hrothgar
+sat silent then, the strong man mourned,
+glorious king, he grieved for his thanes
+as they read the traces of a terrible foe,
+a cursed fiend. That was too cruel a feud,
+too long, too hard!
+
+Nor did he let them rest
+but the next night brought new horrors,
+did more murder, manslaughter and outrage
+and shrank not from it: he was too set on these things.
+
+So Grendel became ruler; against right he fought,
+one against all. Empty then stood
+the best of houses, and for no brief space;
+for twelve long winters torment sat
+on the Friend of the Scyldings, fierce sorrows
+and woes of every kind; which was not hidden
+from the sons of men, but was made known
+in grieving songs, how Grendel warred
+long on Hrothgar, the harms he did him
+through wretched years of wrong, outrage
+and persecution.
+
+A great grief was it for the Guardian of the Scyldings,
+crushing to his spirit. The council lords
+sat there daily to devise some plan,
+what might be best for brave-hearted
+Danes to contrive against these terror-raids.
+
+This was heard of at his home by one of Hygelac’s followers,
+a good man among the Geats, Grendel’s raidings;
+he was for main strength of all men foremost
+that trod the earth at that time of day;
+build and blood matched.
+
+He bade a seaworthy
+wave-cutter be fitted out for him; the warrior king
+he would seek, he said, over swan’s riding,
+that lord of great name, needing men.
+
+The prince had already picked his men
+from the folk’s flower, the fiercest among them
+that might be found. With fourteen men
+he sought sound-wood; sea-wise \textit{Beowulf}
+led them right down to the land’s edge.
+
+
+Away she went over a wavy ocean,
+boat like a bird, breaking seas,
+wind-whetted, white-throated,
+till the curved prow had ploughed so far
+the sun standing right on the second day –
+that they might see land loom on the skyline,
+then the shimmer of cliffs, sheer fells behind,
+reaching capes.
+
+The crossing was at an end;
+closed the wake. Weather-Geats
+stood on strand, stepped briskly up;
+a rope going ashore, ring-mail clashed,
+battle-girdings. God they thanked
+for the smooth going over the salt trails.
+
+There was stone paving on the path that brought
+the war-band on its way. The war-coats shone
+and the links of hard hand-locked iron
+sang in their harness as they stepped along
+in their gear of grim aspect to the hall.
+
+\centerline{\textbf{Scene 2}}
+\centerline{\textit{Loud knocking on the door, which then swings open}}
+\centerline{\textit{Beowulf \& Companions enter. Wulfgar stands to greet them.}}
+
+
+}
 \end{document}
