@@ -1,0 +1,139 @@
+\documentclass[a4paper]{article}
+
+% Table of contents depth (currently unused)
+\setcounter{tocdepth}{3}
+
+% Section numbering depth (zero for no numbering)
+\setcounter{secnumdepth}{0}
+
+% latex package inclusions here
+%\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{tabulary}
+%\usepackage{amsthm}
+
+% set up BNF generator
+%\usepackage{syntax}
+%\setlength{\grammarparsep}{10pt plus 1pt minus 1pt}
+%\setlength{\grammarindent}{10em} 
+
+% set up source code inclusion
+\usepackage{listings}
+\lstset{
+  tabsize=2,
+  basicstyle = \ttfamily\small,
+  columns=fullflexible
+}
+% Usage for the above like so:
+% \begin{lstlisting}
+%   CODE CODE CODE
+% \end{lstlisting}
+
+% in-line code styling (same style as listing)
+\newcommand{\shell}[1]{\lstinline{#1}}
+
+% Line and paragraph spacing
+\newenvironment{linewise}
+  {\parindent=0pt
+   \obeyspaces\obeylines
+   \begingroup\lccode`~=`\^^M
+   \lowercase{\endgroup\def~}{\par\leavevmode}}
+  {\ignorespacesafterend}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Beowulf - Additions \& Omissions}
+\date{2016}
+\author{
+Daniel Clay \\ 
+}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Overview}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+While adapting Michael Alexander's verse translation into a play; I realised that it would 
+be necessary to cut or change a substantial amount of the play. This document
+aims to explain what was changed, and why. 
+
+A poem, by it's very nature, has fewer limitations than a stage play. One of these
+is the ability to gloss over actions or dialogue that in a play must be performed
+in their entirety. For all of these instances, I have been forced to write dialogue
+to fill the gaps suggested by the poet. I have tried my best to match the style of 
+the original, and have noted in this document every insertion.
+
+Likewise, poems can contain elements that would be difficult to stage, or severely
+disrupt the flow of the plot. For the former I have employed the device of a narrator,
+to describe those events that cannot be staged - for example the journey from Heorot
+to the Mere. For the latter, I have cut them as much as possible leaving only what
+is directly relevant to the plot. The account of Scyld Shefing's ship burial has been 
+entirely cut, and the following genealogy reduced to it's bare essentials.
+
+The narrator has also been employed to introduce and end scenes, keeping the
+story moving. I hope that the transition between that which is performed, and
+that which is narrated will be seamless.
+
+\subsection{Notation}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Each scene in the play has been given it's own section, and within each scene I 
+have listed all the additions and omissions which are clearly labelled. Line
+numbers relate to the line numbers in the Michael Alexander translation, not
+the original.
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Script - Additions and Omissions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Act 1}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\linewise{
+
+\centerline{\textbf{Scene 1}}
+
+\centerline{\textbf{Scene 2}}
+
+\centerline{\textbf{Scene 3}}
+
+\centerline{\textbf{Scene 4}}
+
+\centerline{\textbf{Scene 5}}
+
+\subsection{Act 2}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\centerline{\textbf{Scene 1}}
+
+\centerline{\textbf{Scene 2}}
+
+\centerline{\textbf{Scene 3}}
+
+\centerline{\textbf{Scene 4}}
+
+\centerline{\textbf{Scene 5}}
+
+\centerline{\textbf{Scene 6}}
+
+\centerline{\textbf{Scene 7}}
+
+\subsection{Interval}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Act 3}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\centerline{\textbf{Scene 1}}
+
+\centerline{\textbf{Scene 2}}
+
+\centerline{\textbf{Scene 3}}
+
+\centerline{\textbf{Scene 4}}
+
+\centerline{\textbf{Scene 5}}
+
+}
+
+\end{document}
