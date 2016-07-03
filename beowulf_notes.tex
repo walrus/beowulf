@@ -32,6 +32,14 @@
 % in-line code styling (same style as listing)
 \newcommand{\shell}[1]{\lstinline{#1}}
 
+% Line and paragraph spacing
+\newenvironment{linewise}
+  {\parindent=0pt
+   \obeyspaces\obeylines
+   \begingroup\lccode`~=`\^^M
+   \lowercase{\endgroup\def~}{\par\leavevmode}}
+  {\ignorespacesafterend}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -68,9 +76,9 @@ numbered from the Michael Alexander translation rather than the original.
 \section{Notes accompanying the script}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Act 1}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \linewise{
+
+\subsection{Act 1}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \centerline{\textbf{Scene 1}}
 
@@ -109,14 +117,14 @@ is cleared for the visitors and the feasting commences.
 
 This is described in the poem as follows:
 
-A bench was then cleared for the company of Geats
+\textit{A bench was then cleared for the company of Geats
 there in the beer-hall, for the whole band together.
 The stout-hearted warriors went to their places,
 bore their strength proudly. Prompt in his office,
 the man who held the horn of bright mead
 poured out its sweetness. The song of the poet
 again rang in Heorot. The heroes laughed loud
-in the great gathering of the Geats and the Danes.
+in the great gathering of the Geats and the Danes.}
 
 \centerline{\textbf{Scene 3}}
 
