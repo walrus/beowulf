@@ -1,0 +1,383 @@
+\documentclass[a4paper]{article}
+
+% Table of contents depth (currently unused)
+\setcounter{tocdepth}{3}
+
+% Section numbering depth (zero for no numbering)
+\setcounter{secnumdepth}{0}
+
+% latex package inclusions here
+%\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{tabulary}
+%\usepackage{amsthm}
+
+% set up BNF generator
+%\usepackage{syntax}
+%\setlength{\grammarparsep}{10pt plus 1pt minus 1pt}
+%\setlength{\grammarindent}{10em} 
+
+% set up source code inclusion
+\usepackage{listings}
+\lstset{
+  tabsize=2,
+  basicstyle = \ttfamily\small,
+  columns=fullflexible
+}
+% Usage for the above like so:
+% \begin{lstlisting}
+%   CODE CODE CODE
+% \end{lstlisting}
+
+% in-line code styling (same style as listing)
+\newcommand{\shell}[1]{\lstinline{#1}}
+
+% Line and paragraph spacing
+\newenvironment{linewise}
+  {\parindent=0pt
+   \obeyspaces\obeylines
+   \begingroup\lccode`~=`\^^M
+   \lowercase{\endgroup\def~}{\par\leavevmode}}
+  {\ignorespacesafterend}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Beowulf Callback Script}
+\date{13/10/2016}
+\author{
+Daniel Clay \\ 
+}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Scripts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Beowulf}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\linewise{
+
+\centerline{In this passage, Beowulf describes how he beat Grendel. He should sound
+proud of his deeds, but not boastful. This is an opportunity to show an ability
+to tell a story.}
+
+\textbf{Beowulf} We willingly undertook this test of courage,
+risked a match with the might of the stranger,
+and performed it all. I would prefer, though,
+that you had rather seen the rest of him here,
+the whole length of him, lying here dead.
+I had meant to catch him, clamp him down
+with a cruel lock to his last resting-place;
+with my hands upon him, I would have him soon
+in the throes of death – unless he disappeared!
+But I had not a good enough grip to prevent
+his getting away, when God did not wish it;
+the fiend in his flight was far too violent,
+my life’s enemy. But he left his hand
+behind him here, so as to have his life,
+and his arm and shoulder. And all for nothing:
+it bought him no respite, wretched creature.
+
+He lives no longer, laden with sins,
+to plague mankind: pain has set
+heavy hands on him, and hasped about him
+fatal fetters. 
+
+\centerline{As Beowulf prepares to confront Grendel's Mother, he is given a sword
+by Unferth (called \textit{Hrunting}). He then addresses Hrothgar before diving into the lake.}
+
+\centerline{\textit{Having strapped on the new sword, Beowulf turns to Hrothgar.}}
+
+\textbf{Beowulf} I am eager to begin, great son of Healfdene.
+Remember well, then, my wise lord,
+provider of gold, what we agreed once before,
+that if in your service it should so happen
+that I am sundered from life, that you would assume the place
+of a father towards me when I was gone.
+Now extend your protection to the troop of my companions,
+my young fellows, if the fight should take me;
+convey also the gifts that you have granted to me,
+beloved Hrothgar, to my lord Hygelac.
+For on seeing this gold, the Geat chieftain,
+Hrethel’s son, will perceive from its value
+that I had met with magnificent patronage
+from a giver of jewels, and that I had joy of him.
+
+Let Unferth have the blade that I inherited
+this wave-patterned sword
+of rare hardness. With Hrunting shall I
+achieve this deed – or death shall take me!’
+
+\centerline{Before the Geats leave for home, Beowulf addresses Hrothgar and thanks him
+for his hosting, before offering him aid if required.}
+
+\textbf{Beowulf} We wish now to say, seafarers who
+are come from afar, how keenly we desire
+to return again to Hygelac. Here we were rightly,
+royally, treated; you have entertained us well.
+
+If I can ever on this earth earn of you,
+O lord of men, more of your love
+than I have so far done, by deeds of war,
+I shall at once be ready. If ever I hear
+that the neighbouring tribes intend your harm,
+as those who hate you have done in the past,
+I’ll bring a thousand thegns and heroes
+here to help you. As for Hygelac, I know
+that the Lord of the Geats, Guide of his flock,
+young though he is, will yield his support
+both in words and deeds so I may do you honour
+and bring you a grove of grey-tipped spears
+and my strength in aid when you are short of men.
+
+\centerline{Before facing the dragon, Beowulf once again gives a speech to his
+companions. This speech provides an interesting contrast to his earlier speeches:
+old and young; enthusiastic and aged, and in the fights; the earlier fights sought out, 
+this one brought upon him. Not that Beowulf is still a hero; despite everything
+he still faces the challenge head on.}
+
+
+\textbf{Beowulf} Many were the struggles I survived in youth
+in times of danger; I do not forget them.
+When that open-handed lord beloved by the people
+received me from my father I was seven years old:
+King Hrethel kept and fostered me,
+gave me treasure and table-room, true to our kinship.
+All his life he had as little hatred for me,
+a warrior in hall, as he had for a son,
+Herebeald, or Hathkin, or Hygelac my own lord.
+
+I had the fortune in battle, by my bright sword,
+to make return to Hygelac for the treasures he had given me.
+He had granted me land, land to enjoy
+and leave to my heirs. Little need was there
+that Hygelac should go to the Gifthas or the Spear-Danes
+or seek out ever in the Swedish kingdom
+a weaker champion, and chaffer for his services.
+I was always before him in the footing host,
+by myself in the front.
+
+Now shall hard edge,
+hand and blade, do battle for the hoard!
+
+Battles in plenty
+I ventured in youth; and I shall venture this feud
+and again achieve glory, the guardian of my people,
+old though I am, if this evil destroyer
+dares to come out of his earthen hall.’
+
+\centerline{\textit{He addresses his companions}}
+
+\textbf{Beowulf} I would choose not to take
+any weapon to this worm, if I well knew
+of some other fashion fitting to my boast
+of grappling with this monster, as with Grendel before.
+But as I must expect here the hot war-breath
+of venom and fire, for this reason I have
+my shield and armour. From the keeper of the barrow
+I shall not flee one foot; but further than that
+shall be worked out at the wall as our fate is given us
+by the Creator of men. My mood is strong;
+I forgo further words against the winged fighter.
+
+Men in armour! Your mail-shirts protect you:
+await on the barrow the one of us two
+who shall be better able to bear his wounds
+after this onslaught. This affair is not for you,
+nor is it measured to any man but myself alone
+to match strength with this monstrous being,
+attempt this deed. By daring will I
+win this gold; war otherwise
+shall take your king, terrible life’s-bane!
+
+}
+
+\subsection{Bards}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\linewise{
+
+\centerline{This short excerpt describes Grendel's approach to Heorot. While much of the Bards' performances are
+light hearted, this passage needs to be tense and build a sense of foreboding.}
+
+\centerline{\textit{Grendel approaches the hall slowly. The lighting is colder now, as if lit my moonlight.}}
+
+\textbf{The Bards} Gliding through the shadows came
+the walker in the night; the warriors slept
+whose task was to hold the horned building,
+all except one. He awaited, heart swelling
+with anger against his foe, the ordeal of battle.
+
+Down off the moorlands’ misting fells came
+Grendel stalking; God’s brand was on him.
+The spoiler meant to snatch away
+from the high hall some of human race.
+
+That was not the first visit
+he had paid to the hall of Hrothgar the Dane:
+he never before and never after
+harder luck nor hall-guards found.
+
+\centerline{This passage describes how Beowulf swims down through the lake to confront Grendel's Mother.
+It's a nice opportunity for a bit of inter-bard interaction and some lovely poetry.}
+
+\textbf{The Bards} After these words the Weather-Geat prince
+dived into the Mere – he did not care
+to wait for an answer – and the waves closed over
+the daring man. It was a day’s space almost
+before he could glimpse ground at the bottom.
+The grim and greedy guardian of the flood,
+keeping her hungry hundred-season watch,
+discovered at once that one from above,
+a human, had sounded the home of the monsters.
+
+She felt for the man and fastened upon him
+her terrible hooks; but no harm came thereby
+to the body within – the armour so ringed him
+that she could not drive her dire fingers
+through the mesh of the mail-shirt masking his limbs.
+When she came to the bottom she bore him to her lair,
+the mere-wolf, pinioning the mail-clad prince.
+
+Then the man found
+that he was in some enemy hall
+where there was no water to weigh upon him
+and the power of the flood could not pluck him away,
+sheltered by its roof: a shining light he saw,
+a bright fire blazing clearly.
+
+\centerline{The following passage is really the happiest point of the play.
+Beowulf has vanquished his two enemies and is now returning in triumph to Geatland.
+As such, this passage should be lively and gives a great opportunity for the bards
+to have some fun with the narrative as the interval draws closer.}
+
+\textbf{The Bards} Beowulf went from him,
+trod the green earth, a gold-resplendent warrior
+rejoicing in his rings. Riding at anchor
+the strayer of ocean stayed for her master.
+Chiefly the talk returned as they walked
+to Hrothgar’s giving. He was a king
+blameless in all things, until old age at last,
+that brings down so many, removed his proud strength.
+
+They came then to the sea-flood, the spirited band
+of warrior youth, wearing the ring-meshed
+coat of mail.
+The wide sea-boat with its soaring prow
+was loaded at the beach there with battle-raiment,
+with horses and arms. High rose the mast
+above the lord Hrothgar’s hoard of gifts.
+
+Out moved the boat then
+to divide the deep water, left Denmark behind.
+A special sea-dress, a sail, was hoisted
+and belayed to the mast. The beams spoke.
+The wind did not hinder the wave-skimming ship
+as it ran through the seas, but the sea-going craft
+with foam at its throat, furled back the waves,
+her ring-bound prow planing the waters
+till they caught sight of the cliffs of the Geats
+and headlands they knew. The hull drove ahead,
+urged by the breeze, and beached on the shore.
+
+The harbour-guard was waiting at the water’s edge;
+his eye had been scouring the stretches of the flood
+in a long look-out for these loved men.
+Now he moored the broad-ribbed boat in the sand,
+held fast with hawsers, so no heft of the waves
+should drive away again those darling timbers.
+
+He had the heroes’ hoard brought ashore,
+their gold-plated armour. To go to their lord
+was now but a step, to see again Hygelac
+the son of Hrethel, at his home where he dwells
+himself with his hero-band, hard by the sea-wall.
+
+That was a handsome hall there. And high within it sat
+a king of great courage. His consort was young,
+but wise and discreet for one who had lived
+so few years at court; the queen’s name was Hygd,
+Hareth’s daughter. When she dealt out treasure
+to the Geat nation, the gifts were generous,
+there was nothing narrowly done.
+
+The war-man himself came walking along
+by the broad foreshores with his band of picked men,
+trod the sea-beach. From the south blazed
+the sun, the world’s candle. They carried themselves forward,
+stepping on eagerly to the stronghold where
+Ongentheow’s conqueror, the earls’ defender,
+the warlike young king, was well-known for his
+giving of neck-rings. The news of Beowulf’s
+return was rapidly told to Hygelac
+– that the shield of warriors, his own shoulder-companion,
+had walked alive within the gates,
+unscathed from the combat, and was coming to the hall.
+
+\centerline {This final passage is the closing of the play, taking the form of a narration of
+Beowulf's funeral arrangements along with a brief dirge. The mood is solemn. As the narrative
+unfolds, the actors will construct and set alight a funeral pyre.}
+
+\centerline{\textit{The people construct a funeral pyre and place Beowulf on top of it.}}
+
+\textbf{The Bards} The Geat race then reared up for him
+a funeral pyre. It was not a petty mound,
+but shining mail-coats and shields of war
+and helmets hung upon it, as he had desired.
+Then the heroes, lamenting, laid out in the middle
+their great chief, their cherished lord.
+
+On top of the mound the men then kindled
+the biggest of funeral-fires. Black wood-smoke
+arose from the blaze, and the roaring of flames
+mingled with weeping. The winds lay still
+as the heat at the fire’s heart consumed
+the house of bone. And in heavy mood
+they uttered their sorrow at the slaughter of their lord.
+
+\centerline{\textit{The fire is lit. Smoke begins to rise.}}
+
+A woman of the Geats in grief sang out
+the lament for his death. Loudly she sang,
+her hair bound up, the burden of her fear
+that evil days were destined her
+– troops cut down, terror of armies,
+bondage, humiliation. Heaven swallowed the smoke.
+
+Then the Storm-Geat nation constructed for him
+a stronghold on the headland, so high and broad
+that seafarers might see it from afar.
+The beacon to that battle-reckless man
+they made in ten days. What remained from the fire
+they cast a wall around, of workmanship
+as fine as their wisest men could frame for it.
+
+\centerline{\textit{The fire grows.}}
+
+They placed in the tomb both the torques and the jewels,
+all the magnificence that the men had earlier
+taken from the hoard in hostile mood.
+They left the earls’ wealth in the earth’s keeping,
+the gold in the dirt. It dwells there yet,
+of no more use to men than in ages before.
+
+Then the warriors rode around the barrow,
+twelve of them in all, athelings’ sons.
+They recited a dirge to declare their grief,
+spoke of the man, mourned their king.
+
+They praised his manhood and the prowess of his hands,
+they raised his name; it is right a man
+should be lavish in honouring his lord and friend,
+should love him in his heart when the leading-forth
+from the house of flesh befalls him at last.
+
+This was the manner of the mourning of the men of the Geats,
+sharers in the feast, at the fall of their lord:
+they said that he was of all the world’s kings
+the gentlest of men, and the most gracious,
+the kindest to his people, the keenest for fame.
+
+}
+
+\end{document}
